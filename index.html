@@ -7,164 +7,169 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f7f9fc;
-      color: #333;
+      font-family: 'Verdana', sans-serif;
+      background-color: #f0f4f8;
+      color: #1a1a1a;
     }
 
-    header {
-      background-color: #003566;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-
-    nav {
-      background-color: #0077b6;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 10px 20px;
-    }
-
-    nav a:hover {
-      background-color: #0096c7;
-    }
-
-    .hero {
-      background: url('https://th.bing.com/th/id/OIP.fb9b692f663263ba7b802d144c137920?rik=raGDk2d4wExXEg&pid=ImgRaw&r=0') no-repeat center center/cover;
+    .rastreo-rapido {
+      background: url('https://th.bing.com/th/id/OIP._x0dwaP4CmUhAJSOa-S4cgHaHa?rs=1&pid=ImgDetMain&cb=idpwebpc2') no-repeat center center/cover;
       padding: 80px 20px;
-      color: white;
       text-align: center;
-      text-shadow: 1px 1px 4px #000;
+      color: white;
     }
 
-    .hero h2 {
-      font-size: 2.5em;
+    .rastreo-rapido h1 {
+      font-size: 2.8em;
       margin-bottom: 10px;
+      text-shadow: 1px 1px 3px #000;
     }
 
-    .hero p {
+    .rastreo-rapido p {
       font-size: 1.2em;
-    }
-
-    .formulario {
-      background: white;
-      max-width: 500px;
-      margin: 40px auto;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
-
-    .formulario h3 {
       margin-bottom: 20px;
-      color: #003566;
+      text-shadow: 1px 1px 2px #000;
     }
 
-    .formulario input, .formulario select, .formulario button {
-      width: 100%;
+    .rastreo-rapido input,
+    .rastreo-rapido select {
       padding: 12px;
-      margin-bottom: 15px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 1em;
+      width: 250px;
+      border-radius: 6px;
+      border: none;
+      margin-top: 15px;
     }
 
-    .formulario button {
-      background-color: #0077b6;
+    .rastreo-rapido button {
+      padding: 12px 25px;
+      background-color: #ffaa00;
       color: white;
       border: none;
+      margin-left: 10px;
+      border-radius: 6px;
       cursor: pointer;
+      font-weight: bold;
     }
 
-    .formulario button:hover {
-      background-color: #0096c7;
+    .rastreo-rapido button:hover {
+      background-color: #cc8800;
     }
 
-    .info {
-      text-align: center;
+    .info-contacto {
+      background-color: #ffffff;
       padding: 40px 20px;
+      text-align: center;
     }
 
-    .info h3 {
-      color: #0077b6;
+    .info-contacto h2 {
+      color: #007a74;
+    }
+
+    .info-contacto p {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+
+    .servicios {
+      background-color: #e2e8f0;
+      padding: 50px 20px;
+    }
+
+    .servicios h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #005050;
+    }
+
+    .tarjetas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .tarjeta {
+      background-color: white;
+      width: 300px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .tarjeta img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .tarjeta h3 {
+      color: #ffaa00;
     }
 
     footer {
-      background-color: #003566;
+      background-color: #005050;
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 15px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Pago de Facturas Online</h1>
-    <p>Rápido, seguro y desde cualquier lugar</p>
-  </header>
-
-  <nav>
-    <a href="#formulario">Pagar Factura</a>
-    <a href="#info">¿Cómo funciona?</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-
-  <section class="hero">
-    <h2>Paga tus servicios sin salir de casa</h2>
-    <p>Agua, luz, internet, teléfono, TV y mucho más</p>
+  <section class="rastreo-rapido">
+    <h1>Paga tus Facturas</h1>
+    <p>Rápido, seguro y sin filas. Desde tu casa u oficina.</p>
+    <input type="text" placeholder="Nombre completo" /><br>
+    <input type="email" placeholder="Correo electrónico" /><br>
+    <select>
+      <option value="">Selecciona tipo de factura</option>
+      <option>Agua</option>
+      <option>Luz</option>
+      <option>Internet</option>
+      <option>Teléfono</option>
+      <option>TV por cable</option>
+      <option>Otro</option>
+    </select><br>
+    <input type="text" placeholder="Número de referencia" /><br>
+    <input type="number" placeholder="Monto a pagar" /><br>
+    <button>Pagar Ahora</button>
   </section>
 
-  <section id="formulario" class="formulario">
-    <h3>Realiza tu Pago</h3>
-    <form>
-      <input type="text" placeholder="Nombre completo" required>
-      <input type="email" placeholder="Correo electrónico" required>
-      <select required>
-        <option value="">Selecciona el tipo de factura</option>
-        <option>Agua</option>
-        <option>Luz</option>
-        <option>Internet</option>
-        <option>Teléfono</option>
-        <option>TV por cable</option>
-        <option>Otro</option>
-      </select>
-      <input type="text" placeholder="Número de referencia / contrato" required>
-      <input type="number" placeholder="Monto a pagar" required>
-      <button type="submit">Pagar Ahora</button>
-    </form>
+  <section class="info-contacto" id="info">
+    <h2>¿Cómo Funciona?</h2>
+    <p>1️⃣ Llena el formulario con tus datos y el servicio</p>
+    <p>2️⃣ Confirma el monto y realiza tu pago</p>
+    <p>3️⃣ Recibe el comprobante en tu correo electrónico</p>
   </section>
 
-  <section id="info" class="info">
-    <h3>¿Cómo funciona?</h3>
-    <p>1. Ingresa los datos de tu factura.</p>
-    <p>2. Confirma el monto y paga con tarjeta o PSE.</p>
-    <p>3. Recibe el comprobante de pago al correo.</p>
+  <section class="servicios" id="servicios">
+    <h2>Servicios Disponibles</h2>
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <img src="https://th.bing.com/th/id/R.1b7efd4456836d40e679fe2938ceaa1e?rik=NAMVa6RKMwXFVA&pid=ImgRaw&r=0" alt="Pago de servicios">
+        <h3>Facturas de Servicios</h3>
+        <p>Paga servicios públicos como agua, luz, gas e internet.</p>
+      </div>
+      <div class="tarjeta">
+        <img src="https://th.bing.com/th/id/R.7ab7b77260adb0c20b2397fdfe23b3db?rik=CTdBc5YVXiHtrw&riu=http%3a%2f%2fmorand.co%2fwp-content%2fuploads%2f2022%2f09%2fImagen-Servicio-Impuestos-aduanas-y-cambios-internacionales.jpg&ehk=faOBNeBghsiIYj4oiAvF2ta%2bZpYJTtyOuI6%2fZn7ChTQ%3d&risl=&pid=ImgRaw&r=0" alt="Pago de impuestos">
+        <h3>Impuestos y Contribuciones</h3>
+        <p>Realiza pagos de impuestos locales o nacionales.</p>
+      </div>
+      <div class="tarjeta">
+        <img src="https://th.bing.com/th/id/OIP._x0dwaP4CmUhAJSOa-S4cgHaHa?rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Pagos móviles">
+        <h3>Pagos desde el Móvil</h3>
+        <p>Accede desde cualquier dispositivo sin instalaciones.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="contacto" class="info">
-    <h3>¿Tienes dudas?</h3>
-    <p>📞 Línea de atención: +57 350 123 4567</p>
-    <p>📧 Correo: soporte@facturasonline.com</p>
-    <p>🕐 Horario: Lunes a Sábado de 8 a.m. a 6 p.m.</p>
-  </section>
-
-  <footer>
-    © 2025 Pago de Facturas Online. Todos los derechos reservados.
+  <footer id="contacto">
+    <p>¿Dudas? 📞 +57 350 123 4567 | ✉️ soporte@facturasonline.com</p>
+    <p>Horario: Lunes a Sábado de 8:00 a.m. a 6:00 p.m.</p>
+    <p>© 2025 Pago de Facturas Online. Todos los derechos reservados.</p>
   </footer>
 
 </body>
